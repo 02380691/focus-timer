@@ -1,0 +1,39 @@
+{
+  "name": "focustimer",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "com.example.focustimer",
+    "productName": "focus-timer",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*"
+    ],
+    "extraFiles": [
+      "stopwatch.png"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "stopwatch.png",
+      "asarUnpack": "**/*.node"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "devDependencies": {
+    "electron": "^31.2.0",
+    "electron-builder": "^26.0.12"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "A simple app for managing tasks."
+}

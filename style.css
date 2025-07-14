@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .timer {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    display: flex;
+    align-items: center;
+  }
+  
+  .controls input[type="text"] {
+    width: 120px;
+    padding: 8px;
+    margin-right: 10px;
+  }
+  
+  .controls button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  .task-list {
+    margin-top: 20px;
+    width: 300px;
+    text-align: left;
+  }
+  
+  .task-list h2 {
+    margin-bottom: 10px;
+  }
+  
+  .task-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .task-list li:hover {
+    background-color: #e0e0e0;
+  }
+  
+  #taskInput {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+  
+  #addTaskBtn {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  #stopRingBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  

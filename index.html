@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Timer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="stopwatch.png">
+</head>
+<body>
+  <h1>Focus Timer</h1>
+  <div class="timer">
+    <span id="currentTimer">00:00</span>
+  </div>
+  <div class="controls">
+    <input type="text" id="timerInput" placeholder="Enter time(e.g.1m or 1s)">
+    <button id="setTimerBtn">Set Timer</button>
+    <button id="startBtn">Start</button>
+    <button id="stopBtn">Stop</button>
+    <button id="resetBtn">Reset</button>
+  </div>
+  <div class="task-list">
+    <h2>Tasks</h2>
+    <ul id="tasks"></ul>
+    <input type="text" id="taskInput" placeholder="New task">
+    <button id="addTaskBtn">Add Task</button>
+  </div>
+  <div id="stopRingContainer" style="display: none;">
+    <button id="stopRingBtn">Stop Ring</button>
+  </div>
+  <audio id="alarmSound" src="alarm.mp3"></audio>
+  <script src="renderer.js"></script>
+</body>
+</html>

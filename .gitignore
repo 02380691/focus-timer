@@ -1,0 +1,49 @@
+# Ignore node modules
+node_modules/
+
+# Ignore build output
+dist/
+out/
+build/
+
+# Ignore executables
+*.exe
+*.dll
+*.so
+*.dmg
+*.pkg
+*.deb
+*.AppImage
+
+# Ignore logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore environment files
+.env
+.env.local
+.env.*.local
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/editor files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Ignore Electron-packager/electron-builder artifacts
+release/
+win-unpacked/
+linux-unpacked/
+mac-unpacked/
+
+# Ignore lock files (optional, depending on your team preferences)
+# package-lock.json
+# yarn.lock
